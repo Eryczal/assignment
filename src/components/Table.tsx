@@ -9,11 +9,11 @@ const Table = () => {
     const filteredUsers = useSelector(selectFilteredUsers);
 
     if (isLoading) {
-        return <div>Loading users</div>;
+        return <div className="info-screen">Loading users...</div>;
     }
 
     if (error) {
-        return <div>Error while loading users</div>;
+        return <div className="info-screen">Error while loading users</div>;
     }
 
     if (filteredUsers) {
