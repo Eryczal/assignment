@@ -1,6 +1,7 @@
 export type User = {
     id: number;
     name: string;
+    username: string;
     email: string;
     phone: string;
     address?: {
@@ -20,3 +21,17 @@ export type User = {
         bs?: string;
     };
 };
+
+export type Filter = {
+    name: string;
+    username: string;
+    email: string;
+    phone: string;
+};
+
+export type Action = {
+    text: string;
+    type: FilterType;
+};
+
+export type FilterType = "name" | "username" | "email" | "phone";
