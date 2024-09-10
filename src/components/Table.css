@@ -1,0 +1,38 @@
+.table-container {
+    min-width: 50%;
+    flex: 0 1 auto;
+}
+
+table {
+    width: 100%;
+    margin-top: 28px;
+    border-radius: 28px;
+    border-spacing: 0;
+    border: 1px solid var(--color-table-border);
+    background-color: var(--color-light);
+}
+
+th p {
+    margin: 0;
+}
+
+td,
+th {
+    padding: 24px;
+    border-bottom: 1px solid var(--color-table-border);
+}
+
+tr:last-of-type td {
+    border-bottom: 0;
+}
+
+.no-users {
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .table-container {
+        overflow-x: auto;
+        max-width: 100vw;
+    }
+}
